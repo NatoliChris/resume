@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[10pt]{article}
 
 %A Few Useful Packages
 \usepackage{marvosym}
@@ -10,7 +10,6 @@
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
-
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
@@ -29,6 +28,8 @@
 \titlespacing{\section}{0pt}{3pt}{3pt}
 %Tweak a bit the top margin
 %\addtolength{\voffset}{-1.3cm}
+%\addtolength{\topmargin}{-.35in}
+\usepackage[a4paper]{geometry}
 
 %Italian hyphenation for the word: ''corporations''
 \hyphenation{im-pre-se}
@@ -43,7 +44,7 @@
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
-
+\newgeometry{top=1cm, bottom=0.5cm}
 %WATERMARK TEST [**not part of a CV**]---------------
 %\font\wm=''Baskerville:color=787878'' at 8pt
 %\font\wmweb=''Baskerville:color=FF1493'' at 8pt
@@ -68,23 +69,26 @@
 
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
+\vspace*{-0.6cm}
 \section{}
 
 \begin{tabular}{rl}
     \textsc{Address:}   & 36 Clarendon Road, Peakhurst, NSW 2210\\
     \textsc{Phone:}     & 0431 316 550\\
     \textsc{email:}     & \href{natolichris@gmail.com}{natolichris@gmail.com} \\
-    \textsc{website:} & \href{http://cnatoli.com}{http://cnatoli.com}\\
+    \textsc{website:} & \href{https://cnatoli.com}{https://cnatoli.com}\\
     \textsc{linkedin:} & \href{https://au.linkedin.com/in/natolichris}{https://au.linkedin.com/in/natolichris} \\
 \end{tabular}
-
+\vspace*{0.3cm}
 %Section: Work Experience at the top
-\section{Work Experience}
+\section{Relevant Work Experience}
 \begin{tabular}{r|p{11cm}}
+% Research Assistant for Ralph
+December 2016 & Research Assistant at \textsc{University of Sydney} \\ - \emph{Current} & \emph{Working with Dr Ralph Holz}\\ & \footnotesize{Working with the Ethereum parity node in \emph{rust} to deploy a node that tracks each transaction being passed through the global Ethereum network.}\\\multicolumn{2}{c}{} \\
 % Tutoring 2016 S1 and 2
-February 2016 & Academic Tutor at \textsc{University of Sydney} \\ - \emph{Current} & \emph{INFO2120 (S1), INFO1003 (S1), COMP2121 (S2), INFO3404 (S2)}\\&\footnotesize{Teaching practical classes to students, helping to reinforce concepts of the Unit of Study as well as understand the applications of what they are learning. Teaching students: HTML5, CSS3, JavaScript, Databases (Concept drawings, SQL implementations, web backend).}\\\multicolumn{2}{c}{} \\
+February 2016 & Academic Tutor at \textsc{University of Sydney} \\ - December 2016 & \emph{INFO2120 (S1), INFO1003 (S1), COMP2121 (S2), INFO3404 (S2)}\\&\footnotesize{Teaching practical classes to students, helping to reinforce concepts of the Unit of Study as well as understand the applications of what they are learning. Teaching students: HTML5, CSS3, JavaScript, Databases (Concept drawings, SQL implementations, web backend).}\\\multicolumn{2}{c}{} \\
 % TA Databases 2016
-February 2016 & Teaching Assistant at \textsc{University of Sydney} \\ - July 2016 &\emph{INFO2120 - Database Systems 1}\\&\footnotesize{Teaching assistant for the course, managing student timetable changes, group work changes as well as general course administration. Handling the creation and maintenance of student skeleton code for their major assignments. Answering student problems to resolve in the best possible manner.}\\\multicolumn{2}{c}{} \\
+February 2016 & Teaching Assistant at \textsc{University of Sydney} \\ - December 2016 &\emph{INFO2120 - Database Systems 1, INFO3404 - Database Systems 2}\\&\footnotesize{Teaching assistant for the course, managing student timetable changes, group work changes as well as general course administration. Handling the creation and maintenance of student skeleton code for their major assignments. Answering student problems to resolve in the best possible manner.}\\\multicolumn{2}{c}{} \\
 % Summer Internship @ Nicta/Data 61
 November 2015 & Summer Scholarship Research Intern at \textsc{NICTA/Data61} \\ - February 2016 & \emph{Software Systems Research Group}\\&\footnotesize{Summer Scholar research intern based in the 'software systems' group. The main focus of the research is consensus protocols with crypto currency systems and blockchain systems. Research includes the analysis and review of academic articles, conferences and papers. }\\\multicolumn{2}{c}{}\\
 % Tutor 2015
@@ -96,6 +100,7 @@ January 2014 & Developer Intern at \textsc{Pixolut} \\ - March 2014 & \emph{Inte
 % Pixolut Tester
 January 2013 & Tester at \textsc{Pixolut} \\ - July 2013 & \emph{UI and UX testing}\\ & \footnotesize{Employed as a website and web-app tester, also with basic testing of user experience and user interfacing. }\\\multicolumn{2}{c}{}\\
 \end{tabular} 
+\newpage
 %
 %
 %Section: Education
@@ -103,17 +108,22 @@ January 2013 & Tester at \textsc{Pixolut} \\ - July 2013 & \emph{UI and UX testi
 %
 \section{Education}
 \begin{tabular}{rl}	
-\textsc{Current} & Bachelor of \textsc{Information Technology (Hons)} at \textbf{The University of Sydney} \\
-& Major: \emph{Computer Science}\\
-& Expected Graduation: \textbf{2017}\\
-&\\ 
-&\\
+% PhD
+% \textsc{Current} & Doctor of Philosophy (Engineering and IT) at \textbf{The University of Sydney} \\
+% 	& Research Area: \emph{Blockchains}\\\multicolumn{2}{c}{}\\
+% Bachelor
+2013 & Bachelor of \textsc{Information Technology (Hons)} at \textbf{The University of Sydney} \\
+- 2016 & Major: \emph{Computer Science}\\
+	& Honours: \textbf{1st Class}\\
+& Graduation: \textbf{2017}\\
+%&\\
 
 \end{tabular}
 
 % Academic Achievements
 \section{Academic Achievements}
 \begin{tabular}{r p{11cm}}
+	2016 & Deans Award for Outstanding Tutoring (\emph{Faculty Award}) \\ & \emph{University of Sydney} \\ & \footnotesize{The Dean's Awards for Excellence in Tutoring recognise, reward and promote excellence in facilitating student learning by tutors in the Faculty of Engineering and Information Technologies. Both Faculty and School awards are awarded annually.}\\\multicolumn{2}{c}{}\\
 2015 & Microsoft Research Asia Prize for Senior Software Development Projects (\emph{Group Award}) \\  & \emph{University of Sydney}\\ & \footnotesize{Awarded to the group judged to have produced the best system among those carried out in senior project units involving software development.}\\\multicolumn{2}{c}{}\\
 
 November 2015 &Taste of Research Scholarship at \textsc{NICTA/DATA61} \\ - February 2016 & \emph{University of Sydney and Data61}\\&\footnotesize{Research scholarship to the \emph{Software Systems Research Group} at NICTA/Data61 to perform research on the Blockchain system focusing on Consensus and how different blockchain implementations reach consensus.}\\\multicolumn{2}{c}{} \\
@@ -123,8 +133,8 @@ April 2014 & Undergraduate High Honor Roll \\ & \emph{High Distinction average f
 
 \section{Programming Languages}
 \begin{tabular}{rl}
-Strengths: & Java, JavaScript, HTML5, CSS, SQL, C\\
-Experience: & Python, C++, Linux/Unix, BASH, Haskell
+Strengths: & Java, JavaScript, HTML5, CSS, SQL, Python, bash\\
+Experience: & C, C++, Linux/Unix, Haskell, Go, Rust
 \end{tabular}
 
 \section{Leadership Experiences} 
