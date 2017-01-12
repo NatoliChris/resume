@@ -2,6 +2,7 @@
 # Created by https://www.gitignore.io/api/latex
 
 .DS_Store
+out
 
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:

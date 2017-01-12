@@ -1,5 +1,5 @@
 all:
-	latexmk -f -pdf -pvc -xelatex -interaction=nonstopmode *.tex
+	latexmk -f -pdf -pvc -xelatex -interaction=nonstopmode *.tex -output-directory=out
 
 clean:
 	latexmk -CA
